@@ -58,7 +58,14 @@
           </p>
           {{/if}}
         {{/if}}
-
+ 
+        </div>
+      </div>
+    </div>
+	
+  <div class="row">
+    <div class="col col-xs-12 col-sm-8">
+      <div class="live-scenes-contents">
         {{#if scene.limit}}
         <div><span class="scene-info-label">Limited Participation:</span> {{scene.limit}}</div>
         {{/if}}
@@ -73,12 +80,10 @@
           <span class="scene-info-label">Last Activity:</span> {{#if scene.last_posed}}
         {{scene.last_posed}} @ 
         {{/if}}
-      
-        {{scene.updated}} 
-        </div>
       </div>
-    </div>
-    
+	 </div>
+	</div> 
+	
     <div class="col col-xs-12 col-sm-4">
      <div class="live-scenes-controls">
       {{#if scene.watching}}
