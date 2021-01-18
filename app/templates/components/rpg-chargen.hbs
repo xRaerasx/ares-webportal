@@ -1,0 +1,18 @@
+
+  <p class="cg-tip"><AnsiFormat @text={{model.cgInfo.rpg_blurb}} /></p>
+
+  <div class="chargen-section-title">Sheet</div>
+  
+  {{#if (eq model.char.rpg.sheet_format 'url')}}
+    {{input type="text" value=model.char.rpg.sheet size=100}}
+  {{else if (eq model.char.rpg.sheet_format 'embed')}}
+    {{input type="text" value=model.char.rpg.sheet size=100}}
+  {{else}}
+    {{textarea value=model.char.rpg.sheet cols="80" rows=5}}
+  {{/if}}
+  
+  
+
+  <div class="chargen-section-title">Sheet Notes</div>
+  
+  {{textarea value=model.char.rpg.sheet_notes cols="80" rows=5}} 
