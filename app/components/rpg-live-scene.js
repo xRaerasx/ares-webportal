@@ -4,6 +4,7 @@ import { inject as service } from '@ember/service';
 export default Component.extend({
   tagName: '',
   diceString: '',
+  showRollDice: false,
   
   gameApi: service(),
   flashMessages: service(),
